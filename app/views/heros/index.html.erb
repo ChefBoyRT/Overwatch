@@ -1,0 +1,8 @@
+<h1>Heroes</h1>
+
+<% @heroes.each do |hero| %>
+    <h3><%= hero.name %></h3>
+    <%= link_to hero_path(hero) do %>
+		<img src="<%= hero.picture %>" alt="Hero Picture">
+	<% end %>
+<% end %>
