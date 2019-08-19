@@ -17,6 +17,11 @@ ActiveRecord::Schema.define(version: 2019_08_19_170938) do
     t.integer "map_id"
     t.integer "platform_id"
     t.integer "hero_id"
+    t.integer "eliminations"
+    t.float "match_length"
+    t.float "time_on_fire"
+    t.integer "number_of_ultimates"
+    t.boolean "win"
     t.index ["hero_id"], name: "index_games_on_hero_id"
     t.index ["map_id"], name: "index_games_on_map_id"
     t.index ["platform_id"], name: "index_games_on_platform_id"
@@ -25,6 +30,8 @@ ActiveRecord::Schema.define(version: 2019_08_19_170938) do
 
   create_table "heros", force: :cascade do |t|
     t.string "name"
+    t.string "picture"
+    t.string "background"
     t.integer "role_id"
     t.integer "stat_id"
     t.index ["role_id"], name: "index_heros_on_role_id"
