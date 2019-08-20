@@ -1,0 +1,22 @@
+<h1>Hero Stats</h1>
+
+<div>
+    <%= pie_chart @pie.group(:name).count %>
+</div>
+
+<div>
+    <% @hero.maps.each do |map| %>
+        <%= bar_chart({ "Win Rate" => @hero.win_rate, 
+                        "Average Time on Fire" => @hero.average_time_on_fire,
+                        "Average Number of Ultimates" => @hero.average_number_of_ultimates
+                        }) %>
+    <% end %>
+</div>
+
+<div>
+    <%=  %>
+</div>
+
+<div>
+    <%= scatter_chart Game.pluck(:eliminations, :ultimates), xtitle: "Eliminations", ytitle: "Ultimates" %>
+</div>

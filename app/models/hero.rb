@@ -16,4 +16,22 @@ class Hero < ApplicationRecord
         total / games.count
     end
 
+    def average_time_on_fire
+        total = 0
+        games = Game.where(hero_id: self.id)
+        games.each do |game|
+            total += game.time_on_fire
+        end
+        total / games.count
+    end
+
+    def average_number_of_ultimates
+        total = 0
+        games = Game.where(hero_id: self.id)
+        games.each do |game|
+            total += game.number_of_ultimates
+        end
+        total / games.count
+    end
+
 end

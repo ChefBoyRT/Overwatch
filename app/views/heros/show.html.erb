@@ -23,13 +23,8 @@
         <p>Shield: <%= @hero.stat.shield %></p>
     </div>
 
-  <%= form_for @hero do |f| %>
-  <%= f.collection_select :id, Map.all, :id, :name %>
-  <%= f.submit "Enter" %>
-  <% end %>
-    
-    <% @hero.maps.each do |map| %>
-    <%= bar_chart({ map.name => @hero.win_rate }, title: "Win Rate") %>
-    <% end %>
+<button>
+    <%= link_to "Hero Stats", map_path %>
+</button>
     
 </body>
