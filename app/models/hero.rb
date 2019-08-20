@@ -1,4 +1,5 @@
 class Hero < ApplicationRecord
+    has_many :games
     has_many :maps, through: :games
     has_many :ranks, through: :games
     has_many :platforms, through: :games
