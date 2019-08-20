@@ -14,9 +14,9 @@ Platform.destroy_all
 Rank.destroy_all
 
 
-offense = Role.create(hero_role: "Offense")
+offense = Role.create!(hero_role: "Offense")
 
-doom_stats = Stat.create(real_name: "Akande Ogundimu", 
+doom_stats = Stat.create!(real_name: "Akande Ogundimu", 
                          affiliation: "Talon", 
                          base_of_operations: "Oyo, Nigeria", 
                          description: "Only through conflict do we evolve",
@@ -28,20 +28,20 @@ doom_stats = Stat.create(real_name: "Akande Ogundimu",
                         )
 
 
-tower = Map.create(name: "Tower")
+tower = Map.create!(name: "Tower")
 
-xbox = Platform.create(platform_type: "Xbox")
+xbox = Platform.create!(platform_type: "Xbox")
 
-bronze = Rank.create(rank: "Bronze")
+bronze = Rank.create!(rank: "Bronze")
 
-doom_fist = Hero.create(name: "Doom Fist",
+doom_fist = Hero.create!(name: "Doom Fist",
                         picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/hero-select-portrait.png", 
                         background: "https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/background-story.jpg",
                         role_id: offense[:id], 
                         stat_id: doom_stats[:id]
                         )
 
-game1 = Game.create(rank_id: bronze[:id], 
+game1 = Game.create!(rank_id: bronze[:id], 
                     map_id: tower[:id], 
                     platform_id: xbox[:id], 
                     hero_id: doom_fist[:id],
@@ -49,7 +49,7 @@ game1 = Game.create(rank_id: bronze[:id],
                     match_length: 9.45,
                     time_on_fire: 2.31,
                     number_of_ultimates: 3,
-                    win: true
+                    win: 1
                     )
 
 

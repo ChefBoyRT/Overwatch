@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_08_19_170938) do
     t.float "match_length"
     t.float "time_on_fire"
     t.integer "number_of_ultimates"
-    t.boolean "win"
+    t.integer "win"
     t.index ["hero_id"], name: "index_games_on_hero_id"
     t.index ["map_id"], name: "index_games_on_map_id"
     t.index ["platform_id"], name: "index_games_on_platform_id"
