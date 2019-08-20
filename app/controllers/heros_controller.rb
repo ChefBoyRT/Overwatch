@@ -9,11 +9,17 @@ class HerosController < ApplicationController
     end
 
     def show
-        @hero = Hero.find_by(params[:id])
-        @game = Game.find_by(params[:id])
-        @rank = Rank.find_by(params[:id])
-        @stat = Stat.find_by(params[:id])
+        @hero = Hero.find_by(params[:hero_id])
+        @game = Game.find_by(params[:hero_id])
+        @rank = Rank.find_by(params[:hero_id])
+        @stat = Stat.find_by(params[:hero_id])
+        @map = Map.find_by(params[:hero_id])
+    end
+
+    def update
         @map = Map.find_by(params[:id])
+
+        redirect_to hero_path
     end
 
 end
