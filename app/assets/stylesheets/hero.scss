@@ -2,8 +2,118 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.doom-fist {
-    background-image: url("https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/background-story.jpg");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+// html, body, div, span, applet, object, iframe,
+// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+// a, abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol, ul, li,
+// fieldset, form, label, legend,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed, 
+// figure, figcaption, footer, header, hgroup, 
+// menu, nav, output, ruby, section, summary,
+// time, mark, audio, video {
+// 	margin: 0;
+// 	padding: 0;
+// 	border: 0;
+// 	font-size: 100%;
+// 	font: inherit;
+// 	vertical-align: baseline;
+// }
+// /* HTML5 display-role reset for older browsers */
+// article, aside, details, figcaption, figure, 
+// footer, header, hgroup, menu, nav, section {
+// 	display: block;
+// }
+// body {
+// 	line-height: 1;
+// }
+// ol, ul {
+// 	list-style: none;
+// }
+// blockquote, q {
+// 	quotes: none;
+// }
+// blockquote:before, blockquote:after,
+// q:before, q:after {
+// 	content: '';
+// 	content: none;
+// }
+// table {
+// 	border-collapse: collapse;
+// 	border-spacing: 0;
+// }
+
+
+
+
+
+body{
+    background: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg) 
+    no-repeat top,url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg) no-repeat bottom;
+}
+
+.profile {
+    background-image: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg), url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg);
+    background-position-x: center, center;
+    background-position-y: top, bottom;
+    background-size: initial, initial;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: #f6e9f0;
+    width: 10%;
+}
+
+
+.hero_background {
     background-size: cover;
-    color: white;
+}
+
+.info_border {
+    color: #e4dede;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-style: groove;
+    width: 21%;
+    border: 0.2rem solid #77747455;
+    background: #0000ff0a;
+    margin: 4rem;
+    padding: 1rem;
+}
+
+.hero-name{
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+}
+
+.hero-name h1{
+    margin: 0;
+}
+
+.hero-role{
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    color: #00c3ff;
+    font-size: 1.5rem;
+}
+
+.hero-type{
+    font-family: 'Abel', sans-serif;
+    color: #f6f6f6;
+    display: inline-block;
+    vertical-align: text-top;
+    line-height: .75;
+    margin: 0;
+    font-size: 2.7rem;
 }

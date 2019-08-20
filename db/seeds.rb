@@ -14,7 +14,7 @@ Platform.destroy_all
 Rank.destroy_all
 
 
-offense = Role.create(hero_role: "Offense")
+offense = Role.create(hero_role: "OFFENSE")
 
 doom_stats = Stat.create(real_name: "Akande Ogundimu", 
                          affiliation: "Talon", 
@@ -34,7 +34,7 @@ xbox = Platform.create(platform_type: "Xbox")
 
 bronze = Rank.create(rank: "Bronze")
 
-doom_fist = Hero.create(name: "Doom Fist",
+doom_fist = Hero.create(name: "DOOMFIST",
                         picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/hero-select-portrait.png", 
                         background: "https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/background-story.jpg",
                         role_id: offense[:id], 

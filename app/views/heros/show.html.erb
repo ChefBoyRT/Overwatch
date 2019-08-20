@@ -1,16 +1,23 @@
-<body class="doom-fist">
-<h1><%= @hero.name %></h1>
+<head><link href="https://fonts.googleapis.com/css?family=Abel|Teko&display=swap" rel="stylesheet">
+<body class="hero_background" style= "background-image: url(<%= @hero.background %>);">
 
-<p>Hero Role: <%= @hero.role.hero_role %></p>
-<p>Difficulty: <%= @hero.stat.difficulty %></p> 
-<p>Real Name: <%= @hero.stat.real_name %></p>
-<p>Age: <%= @hero.stat.age %></p>
-<p>Description: <%= @hero.stat.description %></p>
-<p>Affiliation: <%= @hero.stat.affiliation %></p>
-<p>Base of Operation: <%= @hero.stat.base_of_operations %></p>
-<p>Health: <%= @hero.stat.health %></p>
-<p>Armour: <%= @hero.stat.armour %></p>
-<p>Shield: <%= @hero.stat.shield %></p>
+    <div class="info_border">
+        <div class="hero-name">
+            <h1><%= @hero.name %></h1>
+        </div>
+            <div class="role-zone">
+                <h3 class="hero-role">Hero Role:</h3> 
+                <h4 class="hero-type"><%= @hero.role.hero_role %></h4>
+            </div>
+        <p>Difficulty: <%= @hero.stat.difficulty %></p> 
+        <p>Real Name: <%= @hero.stat.real_name %></p>
+        <p>Age: <%= @hero.stat.age %></p>
+        <p>Description: <%= @hero.stat.description %></p>
+        <p>Affiliation: <%= @hero.stat.affiliation %></p>
+        <p>Base of Operation: <%= @hero.stat.base_of_operations %></p>
+        <p>Health: <%= @hero.stat.health %></p>
+        <p>Armour: <%= @hero.stat.armour %></p>
+        <p>Shield: <%= @hero.stat.shield %></p>
+    </div>
 </body>
-
-<%= bar_chart @hero.stat.health %>
+</head>
