@@ -9,7 +9,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.float :match_length
       t.float :time_on_fire
       t.integer :number_of_ultimates
-      t.boolean :win
+      t.integer :win
     end
   end
 end
