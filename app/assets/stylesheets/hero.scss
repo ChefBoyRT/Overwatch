@@ -95,6 +95,8 @@ body{
 .hero-name{
     font-family: 'Teko', sans-serif;
     font-size: 2rem;
+    color: #9c8080;
+    letter-spacing: 0.1rem;
 }
 
 .hero-name h1{
@@ -104,8 +106,9 @@ body{
 .hero-role{
     font-family: 'Abel', sans-serif;
     margin: 0;
-    color: #00c3ff;
     font-size: 1.5rem;
+    color: #00c3ff;
+    letter-spacing: 0.07rem;
 }
 
 .hero-type{
@@ -115,5 +118,15 @@ body{
     vertical-align: text-top;
     line-height: .75;
     margin: 0;
-    font-size: 2.7rem;
+    font-size: 2.6rem;
+    letter-spacing: 0.07rem;
 }
+
+.difficulty-block h4{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem;
+    color: #00c3ff;
+    margin-bottom: 0;
+    letter-spacing: 0.07rem;
+}
+
