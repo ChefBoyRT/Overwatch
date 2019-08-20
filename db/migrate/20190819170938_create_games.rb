@@ -10,6 +10,9 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.float :time_on_fire
       t.integer :number_of_ultimates
       t.integer :win
+      t.string :month
+      t.string :country
+      
     end
   end
 end
