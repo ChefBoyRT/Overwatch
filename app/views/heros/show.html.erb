@@ -1,7 +1,9 @@
+
 <head><link href="https://fonts.googleapis.com/css?family=Abel|Teko&display=swap" rel="stylesheet">
 <body class="hero_background" style= "background-image: url(<%= @hero.background %>);">
+  <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
 
-    <div class="info_border">
+  <div class="info_border">
         <div class="hero-name">
             <h1><%= @hero.name %></h1>
         </div>
@@ -19,5 +21,15 @@
         <p>Armour: <%= @hero.stat.armour %></p>
         <p>Shield: <%= @hero.stat.shield %></p>
     </div>
+
+  <%= form_for @game do |f| %>
+  <%= f.collection_select :id, Platform.all, :id, :platform_type %>
+  <%= f.collection_select :id, Rank.all, :id, :rank %>
+  <%= f.collection_select :id, Map.all, :id, :name %>
+  <%= f.select "eliminations", options_for_select(["Win Rate", "Time on Fire"]) %>
+<% end %>
+
+
+<%= bar_chart({"Time on Fire" => @game.time_on_fire, 
+               "Win Rate" => @hero.win_rate}) %> 
 </body>
-</head>
