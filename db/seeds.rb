@@ -51,7 +51,9 @@ game1 = Game.create!(rank_id: bronze[:id],
                     match_length: 9.45,
                     time_on_fire: 2.31,
                     number_of_ultimates: 3,
-                    win: 1 
+                    win: 1,
+                    month: "January",
+                    country: "United States"
                     )
 
 
