@@ -1,14 +1,20 @@
 <% starjob = "starjob.png"%>
 <% emptyjob = "emptyjob.png"%>
+<% home = "home.png" %>
 
 
 
 <head><link href="https://fonts.googleapis.com/css?family=Abel|Teko&display=swap" rel="stylesheet">
-  <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+    <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
 
 <body class="hero-background" style= "background-image: url(<%= @hero.background %>);">
 
-  <div class="info_border">
+    <div class="return-home">
+        <%= link_to heros_path do %>
+        <img src="<%= asset_path(home) %>" alt="Return home">
+        <% end %>
+    </div>
+    <div class="info-border">
         <div class="hero-name">
             <h1><%= @hero.name %></h1>
         </div>
@@ -22,19 +28,28 @@
             <h4>Difficulty:</h4>
             <% empty = 3 - @hero.stat.difficulty %>
             <% @hero.stat.difficulty.times do %>
-                <img src="<%= asset_path(starjob) %>" alt="Difficulty Raiting">
+                <img src="<%= asset_path(starjob) %>" alt="Difficulty Rating">
             <%end%>
             <% empty.times do %>
-                <img src="<%= asset_path(emptyjob) %>" alt="Difficulty Raiting">
+                <img src="<%= asset_path(emptyjob) %>" alt="Difficulty Rating">
             <%end%>
         </div>
         
         <div class="bio">
-            <h5>Real Name:</h5>
-            <h5>Age: <%= @hero.stat.age %></h5>
-            <h5>Description: <%= @hero.stat.description %></h5>
-            <h5>Affiliation: <%= @hero.stat.affiliation %></h5>
-            <h5>Base of Operation: <%= @hero.stat.base_of_operations %></h5>
+            <p>Real Name: </p>
+            <span class="real-name"> <%=@hero.stat.real_name%></span> 
+
+            <p >Age: </p>
+            <span class="age"><%= @hero.stat.age %></span>
+
+            <p>Description: </p>
+            <span class="description"><%= @hero.stat.description %></span>
+
+            <p>Affiliation: </p>
+            <span class="affiliation"><%= @hero.stat.affiliation %></span>
+
+            <p>Base of Operation: </p>
+            <span class="base_of_operation"><%= @hero.stat.base_of_operations %></span>
         </div>
 
         <div class="stat-values">
@@ -44,8 +59,13 @@
         </div>
     </div>
 
-<button>
-    <%= link_to "Hero Stats", map_path %>
-</button>
-    
+    <div class="align-button">
+        <button class="buttons">
+            <%= link_to "Hero Stats", map_path %>
+        </button>
+        <button class="buttons">
+            <%= link_to "Heroes page", heros_path %>
+        </button>
+    </div>
+
 </body>
