@@ -54,8 +54,11 @@
 .return-home{
     display: flex;
     align-items: left;
-    width: 1%;
-    height: 1%;
+}
+
+.return-home img{
+    width: 150px;
+    margin: 0;
 }
 
 button.buttons{
@@ -126,7 +129,7 @@ body{
     width: 21%;
     border: 0.2rem solid #77747455;
     background: #0000ff0a;
-    margin: 4rem;
+    margin: 1rem;
     padding: 1rem;
 }
 
@@ -168,5 +171,12 @@ body{
 
 .bio p{
     font-size: 1.5rem;
+    color: #00c3ff;
+    margin: 0;
+}
+
+.bio .inner-bio{
     color: #f6f6f6;
+    font-size: 1rem;
+    margin: 0, 0, 0.7rem;
 }

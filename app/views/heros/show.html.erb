@@ -11,7 +11,7 @@
 
     <div class="return-home">
         <%= link_to heros_path do %>
-        <img src="<%= asset_path(home) %>" alt="Return home">
+            <img src="<%= asset_path(home) %>" alt="Return home">
         <% end %>
     </div>
     <div class="info-border">
@@ -36,20 +36,19 @@
         </div>
         
         <div class="bio">
-            <p>Real Name: </p>
-            <span class="real-name"> <%=@hero.stat.real_name%></span> 
+            <p>Real Name: </p><span class="inner-bio"> <%=@hero.stat.real_name%></span> 
 
             <p >Age: </p>
-            <span class="age"><%= @hero.stat.age %></span>
+            <span class="inner-bio"><%= @hero.stat.age %></span>
 
             <p>Description: </p>
-            <span class="description"><%= @hero.stat.description %></span>
+            <span class="inner-bio"><%= @hero.stat.description %></span>
 
             <p>Affiliation: </p>
-            <span class="affiliation"><%= @hero.stat.affiliation %></span>
+            <span class="inner-bio"><%= @hero.stat.affiliation %></span>
 
             <p>Base of Operation: </p>
-            <span class="base_of_operation"><%= @hero.stat.base_of_operations %></span>
+            <span class="inner-bio"><%= @hero.stat.base_of_operations %></span>
         </div>
 
         <div class="stat-values">
