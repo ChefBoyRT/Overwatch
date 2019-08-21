@@ -4,6 +4,7 @@ class CreateHeros < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :picture
       t.string :background
+      t.string :graph_background
       t.references :role, foreign_key: true
       t.references :stat, foreign_key: true
 

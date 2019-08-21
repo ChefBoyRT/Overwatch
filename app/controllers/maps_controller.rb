@@ -4,7 +4,7 @@ class MapsController < ApplicationController
 
     def show
         @hero = Hero.find_by(params[:id])
-        @pie = @hero.maps
+        @pie = @hero.maps.limit(5)
         @scatter = @hero.games
         @geo = @hero.games
         @line = @hero.games

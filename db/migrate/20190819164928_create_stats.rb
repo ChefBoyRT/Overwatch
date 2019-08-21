@@ -4,7 +4,7 @@ class CreateStats < ActiveRecord::Migration[5.2]
       t.string :real_name
       t.string :affiliation
       t.string :base_of_operations
-      t.string :description
+      t.text :description
       t.integer :health
       t.integer :armour
       t.integer :shield

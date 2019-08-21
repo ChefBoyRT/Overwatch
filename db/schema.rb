@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2019_08_19_170938) do
     t.string "name"
     t.string "picture"
     t.string "background"
+    t.string "graph_background"
     t.integer "role_id"
     t.integer "stat_id"
     t.index ["role_id"], name: "index_heros_on_role_id"
