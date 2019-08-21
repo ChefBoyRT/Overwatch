@@ -6,6 +6,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.references :platform, foreign_key: true
       t.references :hero, foreign_key: true
       t.integer :eliminations
+      t.integer :deaths
       t.float :match_length
       t.float :time_on_fire
       t.integer :number_of_ultimates

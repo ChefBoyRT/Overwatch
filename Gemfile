@@ -41,6 +41,7 @@ group :development, :test do
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'chartkick', '~> 2.2.0'
+  gem 'groupdate'
 end
 
 group :development do

@@ -10,17 +10,9 @@
         
 
         <div id="bar-graph" class="graph">
-            <% @hero.maps.each do |map| %>
-                <%= bar_chart({ "Win Rate" => @hero.win_rate, 
-                                "Average Time on Fire" => @hero.average_time_on_fire,
-                                "Average Number of Ultimates" => @hero.average_number_of_ultimates
-                                }) %>
-            <% end %>
-        </div>
-        
-
-        <div id="scatter-graph" class="graph">
-            <%= scatter_chart @scatter.pluck(:eliminations, :ultimates), xtitle: "Eliminations", ytitle: "Ultimates" %>
+                <%= bar_chart({"Win Rate" => @hero.win_rate }) %>
+                <%= bar_chart({"Average Time on Fire" => @hero.average_time_on_fire }) %>
+                <%= bar_chart({"Average Number of Ultimates" => @hero.average_number_of_ultimates }) %>
         </div>
 
         <div id="geo-graph" class="graph">
