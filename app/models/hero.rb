@@ -13,7 +13,7 @@ class Hero < ApplicationRecord
         games.each do |game|
             total += game.win
         end
-        total / games.count
+        total.to_f / games.count
     end
 
     def average_time_on_fire
