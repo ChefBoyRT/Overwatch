@@ -10,10 +10,10 @@ class HerosController < ApplicationController
 
     def show
         @hero = Hero.find(params[:id])
-        # @game = Game.find(params[:id])
-        # @rank = Rank.find(params[:id])
-        # @stat = Stat.find(params[:id])
-        # @map = Map.find(params[:id])
+        # @game = Game.find(params[:hero_id])
+        # @rank = Rank.find(params[:hero_id])
+        # @stat = Stat.find(params[:hero_id])
+        # @map = Map.find(params[:hero_id])
         # binding.pry
     end
 

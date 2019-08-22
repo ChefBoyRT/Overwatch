@@ -493,9 +493,9 @@ moira = Hero.create(name: "MOIRA",
 										)
 
 pharah = Hero.create(name: "PHARAH",
-										picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/phara/hero-select-portrait.png", 
-										background: "https://d1u1mce87gyfbn.cloudfront.net/hero/phara/background-story.jpg",
-										graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/phara/idle-video.mp4",
+										picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/hero-select-portrait.png", 
+										background: "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/background-story.jpg",
+										graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/idle-video.mp4",
 										role_id: damage[:id], 
 										stat_id: pharah_stats[:id]
 										)
