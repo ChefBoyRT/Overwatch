@@ -7,24 +7,20 @@
 <%= video_tag @hero.graph_background, autoplay: :autoplay, loop: :loop, mute: :mute, class: "background-video" %>
     <div class="dashboard">
         
-        <div id="pie-graph" class="graph">
+        <div class="graph">
             <%= pie_chart @pie.group(:name).count %>
+        <div id="geo-chart">                            
+            <%= geo_chart @geo.group(:country).count, backgroundColor: "#9dbbf800" %>
+        </div>
+            <%= bar_chart({"Win Rate" => @hero.win_rate,
+                            "Average Time on Fire" => @hero.average_time_on_fire,
+                            "Average Number of Ultimates" => @hero.average_number_of_ultimates }) %>
+        <div id="line-graph">
+            <%= line_chart @line.group(:month).count, library: {backgroundColor: "#9dbbf800"} %>
         </div>
         
+    </div>
 
-        <div id="bar-graph" class="graph">
-                <%= bar_chart({"Win Rate" => @hero.win_rate,
-                               "Average Time on Fire" => @hero.average_time_on_fire,
-                               "Average Number of Ultimates" => @hero.average_number_of_ultimates }) %>
-        </div>
-
-        <div id="geo-graph" class="graph">
-            <%= geo_chart @geo.group(:country).count %>
-        </div>
-
-        <div id="line-graph" class="graph">
-            <%= line_chart @line.group(:month).count, ylabel: "Months" %>
-        </div>
         
     </div>
 </body>
