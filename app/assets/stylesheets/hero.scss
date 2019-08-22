@@ -52,6 +52,10 @@
             // }
             
             
+
+
+
+
 //Index page CSS
 body{
     background: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg) 
@@ -63,18 +67,22 @@ body{
 
 
 .profile {
-    background-image: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg), url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg);
-    background-position-x: center, center;
-    background-position-y: top, bottom;
-    // background-size: initial, initial;
-    // background-repeat: no-repeat, no-repeat;
-    // background-attachment: initial, initial;
-    // background-origin: initial, initial;
-    // background-clip: initial, initial;
     // background-color: #f6e9f0;
     width: 20%;
+
 }
 
+.profile .hero-names{
+    // top: .5rem;
+    // padding: 0 .6rem;
+    font-size: 1.5rem;
+    // line-height: .9em;
+    bottom: 0;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    letter-spacing: .8px;
+}
 
 //All buttons display CSS
 button.buttons{
