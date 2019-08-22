@@ -1,5 +1,10 @@
+<% heroes = "heroes.png" %>
+
+
 <head>
-<h1>Heroes</h1>
+<div class="heros-header">
+<img src="<%= asset_path(heroes) %>" alt="Difficulty Rating">
+</div>
 </head>
 <body>
 <% @heroes.each do |hero| %>

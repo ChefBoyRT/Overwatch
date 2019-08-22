@@ -3,7 +3,8 @@
     <h1>Hero Stats</h1>
 </head>
 
-<body class="graph-background" style="background-video: url(<%= @hero.graph_background %>);" >
+<body >
+<%= video_tag @hero.graph_background, autoplay: :autoplay, loop: :loop, mute: :mute, class: "background-video" %>
     <div class="dashboard">
         
         <div id="pie-graph" class="graph">
