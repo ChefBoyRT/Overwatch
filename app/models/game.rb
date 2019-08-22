@@ -13,7 +13,7 @@ class Game < ApplicationRecord
     end
 
     def self.least_eliminations_hero_name
-        Game.order(eliminations: :asc).limit(1)[0].hero.name
+        order(eliminations: :asc).limit(1)[0].hero.name
     end
 
     def self.least_eliminations
