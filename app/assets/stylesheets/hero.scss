@@ -80,16 +80,28 @@ body{
     justify-content: flex-end;
     align-items: center;
     border-style: groove;
+    flex: 1;
     margin: 1rem;
 }
 
 .profile .hero-names{
     font-size: 1.5rem;
     position: absolute;
-    margin-bottom: 1rem;
+    width: 12rem;
+    height: 3.2rem;
     letter-spacing: .8px;
-    background-color: #9dbbf8c9;
+    background-color: #000000c4;
+    color: white;
 }
+
+.profile:hover{
+    background: #f6f6f6;
+    transition: .1s cubic-bezier(.075,.82,.165,1);
+    transform: scale(1.3);
+    z-index: 10;
+    box-shadow: 6px, 6px, 7rem, #000000;
+}
+
 
 
 //All buttons display CSS
