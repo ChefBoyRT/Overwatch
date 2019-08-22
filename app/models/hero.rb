@@ -7,6 +7,19 @@ class Hero < ApplicationRecord
     belongs_to :role
     belongs_to :stat
 
+    def self.filter(filter)
+        if filter
+            role = Role.find_by(hero_role: filter)
+            if role
+                self.where(role_id: role[:id])
+            else
+                Hero.all
+            end
+        else
+            Hero.all
+        end
+    end
+
     def win_rate
         total = 0
         games = Game.where(hero_id: self.id)
