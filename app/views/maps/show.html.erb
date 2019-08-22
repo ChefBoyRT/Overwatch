@@ -1,26 +1,21 @@
 <head>
     <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
-    <h1>Hero Stats</h1>
 </head>
 
 <body>
 <%= video_tag @hero.graph_background, autoplay: :autoplay, loop: :loop, mute: :mute, class: "background-video" %>
-    <div class="dashboard">
-        
-        <div class="graph">
-            <%= pie_chart @pie.group(:name).count %>
-        <div id="geo-chart">                            
-            <%= geo_chart @geo.group(:country).count, backgroundColor: "#9dbbf800" %>
-        </div>
+    <div class="dashboard">    
+        <div id="pie-chart" class="graph">
+            <%= pie_chart @pie.group(:name).count, title: "Top 5 Levels" %>
             <%= bar_chart({"Win Rate" => @hero.win_rate,
                             "Average Time on Fire" => @hero.average_time_on_fire,
-                            "Average Number of Ultimates" => @hero.average_number_of_ultimates }) %>
-        <div id="line-graph">
-            <%= line_chart @line.group(:month).count, library: {backgroundColor: "#9dbbf800"} %>
+                            "Average Number of Ultimates" => @hero.average_number_of_ultimates }, title: "Player Stats") %>
+        <div id="line-graph" class="graph">
+            <%= line_chart @line.group(:month).count, title: "Picks by Month" %>
         </div>
-        
-    </div>
-
-        
+        <h2>Picks by Country</h2>
+            <div id="geo-chart" class="graph">                            
+                <%= geo_chart @geo.group(:country).count %>
+            </div>
     </div>
 </body>

@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+h2 {
+    margin-left: 26rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.884);
+}
+
 .background-video{
     width: 100vw;
     height: 100vh;
@@ -12,12 +19,20 @@
     z-index: -2;
 }
 
+.graph {
+    margin-bottom: 3rem;
+}
+
 #line-graph {
     justify-content: flex-end;
     align-items: flex-start;
     width: 1000px;
 }
 
-// #geo-chart {
-//     back
-// }
+#pie-chart {
+    margin-bottom: 3rem;
+}
+
+#geo-chart {
+    margin-bottom: 3rem;
+}
