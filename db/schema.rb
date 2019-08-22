@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 2019_08_19_170938) do
     t.string "real_name"
     t.string "affiliation"
     t.string "base_of_operations"
-    t.string "description"
+    t.text "description"
     t.integer "health"
     t.integer "armour"
     t.integer "shield"

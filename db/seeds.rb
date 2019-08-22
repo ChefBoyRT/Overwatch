@@ -466,14 +466,6 @@ lucio = Hero.create(name: "LUCIO",
                     graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/idle-video.mp4",
                     role_id: support[:id], 
                     stat_id: lucio_stats[:id]
-                    )
-
-lucio = Hero.create(name: "LUCIO",
-                    picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/hero-select-portrait.png", 
-                    background: "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/background-story.jpg",
-                    graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/idle-video.mp4",
-                    role_id: support[:id], 
-                    stat_id: lucio_stats[:id]
 										)
 										
 mccree = Hero.create(name: "MCCREE",
