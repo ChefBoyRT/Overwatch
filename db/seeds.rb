@@ -519,7 +519,7 @@ roadhog = Hero.create(name: "ROADHOG",
 sigma = Hero.create(name: "SIGMA",
 											picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/sigma/hero-select-portrait.png", 
 											background: "https://d1u1mce87gyfbn.cloudfront.net/hero/sigma/background-story.jpg",
-											graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/sigma/idle-video.mp4",
+											graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/sigma/idle-video-thumbnail.jpg",
 											role_id: tank[:id], 
 											stat_id: sigma_stats[:id]
 											)
@@ -671,7 +671,7 @@ heroes = [wreckingball[:id], widowmaker[:id], torbjorn[:id],
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 countries = ["United States", "China", "Japan", "Russia", "Mexico", "Canada", "Uruguay", "Peru", "Chile", "Panama", "South Korea", "Australia", "England", "France", "Ireland", "Spain", "Portugal", "Italy"]
 
-5000.times do 
+500.times do 
     rank = ranks.sample
     map = maps.sample
     platform = platforms.sample
@@ -680,7 +680,7 @@ countries = ["United States", "China", "Japan", "Russia", "Mexico", "Canada", "U
     eliminations = rand(1..32)
     deaths = rand(1..20)
     match_length = rand(1.0..20.0)
-    time_on_fire = rand(1.0..20.0)
+    time_on_fire = rand(1.0..5.0)
     number_of_ultimates = rand(1..5)
 	win = rand(0..1)
 	hero = heroes.sample
