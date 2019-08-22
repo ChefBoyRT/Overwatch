@@ -1,10 +1,10 @@
 class GamesController < ApplicationController
     def index
-        @games = Games.all
+        @games = Game.all
     end
 
     def show
-        @game = Game.find_by(params[:id)
+        @game = Game.find(params[:id])
     end
 
 end
