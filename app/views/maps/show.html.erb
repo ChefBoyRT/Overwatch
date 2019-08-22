@@ -12,7 +12,7 @@
         
 
         <div id="bar-graph" class="graph">
-                <%= bar_chart({"Win Rate" => @hero.win_rate ,
+                <%= bar_chart({"Win Rate" => @hero.win_rate,
                                "Average Time on Fire" => @hero.average_time_on_fire,
                                "Average Number of Ultimates" => @hero.average_number_of_ultimates }) %>
         </div>
@@ -22,7 +22,7 @@
         </div>
 
         <div id="line-graph" class="graph">
-            <%= line_chart @line.group(:month).count%>
+            <%= line_chart @line.group(:month).count, ylabel: "Months" %>
         </div>
         
     </div>

@@ -653,30 +653,44 @@ wreckingball = Hero.create(name: "WRECKINGBALL",
 											stat_id: wreckingball_stats[:id]
 											)
 
+heroes = [wreckingball[:id], widowmaker[:id], torbjorn[:id], 
+		  soldier76[:id], reaper[:id], orisa[:id],
+		  mei[:id], hanzo[:id], dva[:id], 
+		  baptiste[:id], zenyatta[:id], zarya[:id], 
+		  winston[:id], tracer[:id], symmetra[:id], 
+		  sombra[:id], sigma[:id], roadhog[:id],
+		  reinhardt[:id], pharah[:id], moira[:id],
+		  mercy[:id], mccree[:id], lucio[:id],
+		  junkrat[:id], genji[:id], brigitte[:id],
+		  bastion[:id], ashe[:id], ana[:id],
+		  doom_fist[:id]
+		 ]
+
 # GAME SEEDS #
-months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-# months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 countries = ["United States", "China", "Japan", "Russia", "Mexico", "Canada", "Uruguay", "Peru", "Chile", "Panama", "South Korea", "Australia", "England", "France", "Ireland", "Spain", "Portugal", "Italy"]
 
-100.times do 
+5000.times do 
     rank = ranks.sample
     map = maps.sample
     platform = platforms.sample
     month = months.sample
     country = countries.sample
-    eliminations = rand(1..20)
+    eliminations = rand(1..32)
     deaths = rand(1..20)
     match_length = rand(1.0..20.0)
     time_on_fire = rand(1.0..20.0)
     number_of_ultimates = rand(1..5)
-    win = rand(0..1)
+	win = rand(0..1)
+	hero = heroes.sample
     # binding.pry
     
     Game.create(
                 rank_id: rank, 
                 map_id: map, 
                 platform_id: platform, 
-                hero_id: doom_fist[:id],
+                hero_id: hero,
                 eliminations: eliminations,
                 deaths: deaths,
                 match_length: match_length,

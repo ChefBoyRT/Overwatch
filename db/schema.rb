@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2019_08_19_170938) do
     t.float "time_on_fire"
     t.integer "number_of_ultimates"
     t.integer "win"
-    t.string "month"
+    t.integer "month"
     t.string "country"
     t.index ["hero_id"], name: "index_games_on_hero_id"
     t.index ["map_id"], name: "index_games_on_map_id"
