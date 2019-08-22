@@ -42,7 +42,7 @@ ana_stats = Stat.create(real_name: "Ana Amari",
                         difficulty: 3
                         )
 
-ash_stats = Stat.create(real_name: "Elizabeth Caledonia Ashe", 
+ashe_stats = Stat.create(real_name: "Elizabeth Caledonia Ashe", 
                         affiliation: "Deadlock Gang", 
                         base_of_operations: "Deadlock Gorge, Arizona, USA", 
                         description: "Ashe is the ambitious and calculating leader of the Deadlock Gang and a respected figure in the criminal underworld.",
@@ -420,12 +420,12 @@ ana = Hero.create(name: "ANA",
 									stat_id: ana_stats[:id]
 									)
 
-ash = Hero.create(name: "ASH",
+ashe = Hero.create(name: "ASHE",
 									picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/ashe/hero-select-portrait.png", 
 									background: "https://d1u1mce87gyfbn.cloudfront.net/hero/ashe/background-story.jpg",
 									graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/ashe/idle-video.mp4",
 									role_id: damage[:id], 
-									stat_id: ash_stats[:id]
+									stat_id: ashe_stats[:id]
 									)
 
 bastion = Hero.create(name: "BASTION",
@@ -493,9 +493,9 @@ moira = Hero.create(name: "MOIRA",
 										)
 
 pharah = Hero.create(name: "PHARAH",
-										picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/phara/hero-select-portrait.png", 
-										background: "https://d1u1mce87gyfbn.cloudfront.net/hero/phara/background-story.jpg",
-										graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/phara/idle-video.mp4",
+										picture: "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/hero-select-portrait.png", 
+										background: "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/background-story.jpg",
+										graph_background: "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/idle-video.mp4",
 										role_id: damage[:id], 
 										stat_id: pharah_stats[:id]
 										)

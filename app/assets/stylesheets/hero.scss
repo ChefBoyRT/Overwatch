@@ -39,28 +39,52 @@
 // 	list-style: none;
 // }
 // blockquote, q {
-// 	quotes: none;
-// }
-// blockquote:before, blockquote:after,
-// q:before, q:after {
-// 	content: '';
-// 	content: none;
-// }
-// table {
-// 	border-collapse: collapse;
-// 	border-spacing: 0;
-// }
+    // 	quotes: none;
+    // }
+    // blockquote:before, blockquote:after,
+    // q:before, q:after {
+        // 	content: '';
+        // 	content: none;
+        // }
+        // table {
+            // 	border-collapse: collapse;
+            // 	border-spacing: 0;
+            // }
+            
+            
 
-.return-home{
+
+
+
+//Index page CSS
+body{
+    background: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg) 
+    no-repeat top,url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg) no-repeat bottom;
     display: flex;
-    align-items: left;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.return-home img{
-    width: 150px;
-    margin: 0;
+
+.profile {
+    // background-color: #f6e9f0;
+    width: 20%;
+
 }
 
+.profile .hero-names{
+    // top: .5rem;
+    // padding: 0 .6rem;
+    font-size: 1.5rem;
+    // line-height: .9em;
+    bottom: 0;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    letter-spacing: .8px;
+}
+
+//All buttons display CSS
 button.buttons{
     cursor: pointer;
     background-image: radial-gradient(circle farthest-side,#3367d6,#3367d6 80%,rgba(51,103,214,0) 100%);
@@ -96,26 +120,21 @@ button.buttons a {
 }
 
 
-body{
-    background: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg) 
-    no-repeat top,url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg) no-repeat bottom;
+//Show page CSS
+.return-home{
+    display: flex;
+    align-items: left;
 }
+
+.return-home img{
+    width: 150px;
+    margin: 0;
+}
+
 .hero-background{
     background-size: cover;
     display: flex;
     flex-direction: column;
-}
-.profile {
-    background-image: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg), url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg);
-    background-position-x: center, center;
-    background-position-y: top, bottom;
-    background-size: initial, initial;
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: initial, initial;
-    background-origin: initial, initial;
-    background-clip: initial, initial;
-    background-color: #f6e9f0;
-    width: 10%;
 }
 
 
