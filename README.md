@@ -59,28 +59,26 @@ end
 * Filter characters by role
 * See a list of game statistics
 * Check statistics for individual characters
-* Remove tacos from favorites list
-* Take the Taco Compatibility Quiz
 
 
 To-do list:
 * Refactor “code smell”
-* Add API functionality to return a recipe for chosen taco
-* Discover local restaurants serving tacos
-* Integrate matching photos to tacos
+* Add API functionality to return real hero statistics
+* Create additional hero profiles as new characters are created
+* Integrate filter options for hero statistics page
 
 ## Status
 Project is: finished with option to expand functionality and DRY out code.
 
 ## Inspiration
-The inspiration for TacoLandia came from a restaurant API that did not return the information
-we were looking for. Using our own love of tacos, we set out to build a fun, interactive, and 
-clean UX/UI that would bring other users joy!
+The inspiration for Overwatch came from the Overwatch API that did not return the information
+we were looking for. Using our own love of the game, we set out to build a fun, interactive, and 
+clean UX/UI for fans to enjoy. 
 
 ## Contact
-Created by [Catherine O'Hara](www.linkedin.com/in/catherine-o) and [Taylor Stein](www.linkedin.com/in/taylor-stein)
+Created by [Daniel Sanchez] and [Taylor Stein](www.linkedin.com/in/taylor-stein)
 
-Feel free to contact us!!! 🌮
+Feel free to contact us with any questions and comments.
 
 ## License
 [Click to view](https://github.com/stein0209/TacoLandia/blob/master/License.txt)
