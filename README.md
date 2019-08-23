@@ -61,7 +61,6 @@ end
 
 
 To-do list:
-* Refactor “code smell”
 * Add API functionality to return real hero statistics
 * Create additional hero profiles as new characters are created
 * Integrate filter options for hero statistics page
