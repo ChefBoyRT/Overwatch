@@ -64,8 +64,30 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 3rem;
+    font-family: 'Abel', sans-serif;
 }
 
+.header-inputs{
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+input[type=submit]{
+    height: 28px;
+    font-size: 19px;
+    font-family: 'Abel', sans-serif;
+}
+
+select{
+    height: 28px;
+    font-size: 19px;
+}
+
+.heros-header p{
+    font-size: 1.3rem;
+}
 body{
     background: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg) 
     no-repeat top,url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg) no-repeat bottom;
@@ -75,14 +97,13 @@ body{
 }
 
 
-.profile {
-    width: 20%;
+.profile{
+    width: 11%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     border-style: groove;
-    flex: 1;
     margin: 1rem;
 }
 
@@ -94,32 +115,28 @@ body{
     letter-spacing: .8px;
     background-color: #000000c4;
     color: white;
+    font-family: 'Abel', sans-serif;
 }
 
 .profile:hover{
     background: #f6f6f6;
-    transition: .1s cubic-bezier(.075,.82,.165,1);
+    transition: .7s cubic-bezier(.075,.82,.165,1);
     transform: scale(1.3);
     z-index: 10;
-    box-shadow: 6px, 6px, 7rem, #000000;
+    box-shadow: 6px 6px 6px #000000;
 }
 
 
 
 //All buttons display CSS
-button.buttons{
-    cursor: pointer;
-    background-image: radial-gradient(circle farthest-side,#3367d6,#3367d6 80%,rgba(51,103,214,0) 100%);
-    background: #cacbce;
-    color: #fff;
+.buttons{
+    background: #ffffff;
     border: none;
-    border-radius: 3px;
+    border-radius: 5.9px;
     min-width: 5rem;
     max-width: 10rem;
     min-height: 45px;
     max-height: 5rem;
-    line-height: 20px;
-    font-weight: 500px;
     font-size: 18px;
     line-height: 20px;
     font-family: 'Teko', sans-serif;
@@ -127,20 +144,40 @@ button.buttons{
     margin: 0.5rem;
 }
 
-button.buttons a {
+.buttons a{
     text-decoration: none;
 }
 
-.buttons:hover {
+.buttons:hover{
     background: #818181;
     box-shadow: 0 1px 2px #d3d3d392;
 }
 
-.align-button {
+.align-button{
     flex-direction: row;
     margin-left: 9rem;
 }
 
+
+.heros-header .buttons{
+    background: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 4.2px;
+    min-width: 7.5rem;
+    max-width: 10rem;
+    min-height: 45px;
+    max-height: 5rem;
+    font-size: 1.3rem;
+    font-family: 'Teko', sans-serif;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.heros-header .buttons:hover{
+    background: #aba8a8;
+    box-shadow: 0 1px 2px #1d1b1b92;
+}
 
 //Show page CSS
 .return-home{
@@ -164,12 +201,13 @@ button.buttons a {
     color: #e4dede;
     font-family: 'Abel', sans-serif;
     box-sizing: border-box;
+    border-style: groove;
+    border-radius: 1.2rem;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border-style: groove;
-    width: 21%;
-    border: 0.2rem solid #77747455;
-    background: #0000ff0a;
+    width: 269.22px;
+    border: 0.2rem solid #4c4b4b;
+    background: #0e0e8e9c;
     margin: 1rem;
     padding: 1rem;
 }
@@ -178,7 +216,7 @@ button.buttons a {
 .hero-name{
     font-family: 'Teko', sans-serif;
     font-size: 2rem;
-    color: #9c8080;
+    color:#000000bf;
     letter-spacing: 0.1rem;
 }
 
@@ -189,7 +227,7 @@ button.buttons a {
 .hero-role{
     margin: 0;
     font-size: 1.5rem;
-    color: #00c3ff;
+    color: #82e2ff;
     letter-spacing: 0.07rem;
 }
 
@@ -205,14 +243,14 @@ button.buttons a {
 
 .difficulty-block h4{
     font-size: 1.5rem;
-    color: #00c3ff;
+    color: #82e2ff;
     margin-bottom: 0;
     letter-spacing: 0.07rem;
 }
 
 .bio p{
     font-size: 1.5rem;
-    color: #00c3ff;
+    color: #82e2ff;
     margin: 0;
 }
 
