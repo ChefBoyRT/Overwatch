@@ -8,12 +8,12 @@
   <div class="heros-header">
     <img src="<%= asset_path(heroes) %>" alt="Difficulty Rating">  
     <div class="header-inputs">
-      <p>Filter by Character Roles</p>
+      <p>Filter by Hero Roles:</p>
       <%= form_tag(heros_path, method: :get) do %>
         <%= select_tag("role", options_from_collection_for_select(Role.all, "hero_role", "hero_role"), :include_blank => true) %>
           <%= submit_tag ("Filter Heroes") %>
       <% end %>
-      
+
       <button class="buttons">
         <%= link_to "Game Stats Page", games_path %>
       </button>
