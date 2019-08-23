@@ -37,7 +37,8 @@
         </div>
         
         <div class="bio">
-            <p>Real Name: </p><span class="inner-bio"> <%=@hero.stat.real_name%></span> 
+            <p>Real Name: </p>
+            <span class="inner-bio"> <%=@hero.stat.real_name%></span> 
 
             <p >Age: </p>
             <span class="inner-bio"><%= @hero.stat.age %></span>
@@ -53,6 +54,7 @@
         </div>
 
         <div class="stat-values">
+            <p class="hero-base-stats">Stats</p>
             <p>Health: <%= @hero.stat.health %></p>
             <p>Armour: <%= @hero.stat.armour %></p>
             <p>Shield: <%= @hero.stat.shield %></p>
