@@ -32,7 +32,7 @@ rails db:create
 rails db:migrate
 rails db:seed
 rails s
-navigate to localhost:3000/heros
+navigate to localhost:3000
 ```
 
 ## Code Examples
