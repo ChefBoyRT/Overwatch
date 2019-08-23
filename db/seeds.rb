@@ -669,7 +669,13 @@ heroes = [wreckingball[:id], widowmaker[:id], torbjorn[:id],
 # GAME SEEDS #
 # months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-countries = ["United States", "China", "Japan", "Russia", "Mexico", "Canada", "Uruguay", "Peru", "Chile", "Panama", "South Korea", "Australia", "England", "France", "Ireland", "Spain", "Portugal", "Italy"]
+countries = ["United States", "China", "Japan", "Russia", "Mexico", "Canada", "Uruguay", "Peru", "Chile", "Panama", 
+			 "South Korea", "Australia", "England", "France", "Ireland", "Spain", "Portugal", "Italy", "Afghanistan",
+			 "Argentina", "Armenia", "Austria", "Bahamas", "Bangladesh", "Belgium", "Bolivia", "Botswana", "Brunei",
+			 "Cambodia", "Cameroon", "Colombia", "Congo", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Denmark", "Malaysia",
+			 "Dominican Republic", "Ecuador", "Egypt", "Estonia", "Ethiopia", "Finland", "Gambia", "Germany", "Ghana",
+			 "Greece", "Guatemala", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Iran", "Iraq", "Israel", "Jamaica", "Vietnam"
+			]
 
 500.times do 
     rank = ranks.sample
