@@ -1,45 +1,56 @@
 <% home = "home.png" %>
-<head>
-    <div class="return-home">
-        <%= link_to heros_path do %>
-            <img src="<%= asset_path(home) %>" alt="Return home">
-        <% end %>
-    </div>
+<% stats = "stats.png" %>
+<head><link href="https://fonts.googleapis.com/css?family=Abel|Teko&display=swap" rel="stylesheet">
+    <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
 </head>
-<body class="">
-    <h1>Game Stats</h1>
-    <div class="stats-card">
-        <h3>Most Number of Eliminations</h3>
-            <p><%= @games.most_eliminations_hero_name%> - <%= @games.most_eliminations%> </p>
 
-        <h3>Least Number of Eliminations</h3>
-            <p><%= @games.least_eliminations_hero_name%> - <%= @games.least_eliminations%> </p>
-    </div>        
-
-    <div class="stats-card">
-        <h3>Most Time on Fire</h3>
-            <p><%= @games.most_time_on_fire_hero_name%> - <%= @games.most_time_on_fire%> min </p>
-
-        <h3>Least Time on Fire</h3>
-            <p><%= @games.least_time_on_fire_hero_name%> - <%= @games.least_time_on_fire%> min </p>
+<body class="dont-flex">
+    <div class="game-page-icons">
+        <div id="game-page-icon" class="return-home">
+            <%= link_to heros_path do %>
+                <img src="<%= asset_path(home) %>" alt="Return home">
+            <% end %>
+        </div>
+        <div class="game-stats-picture">
+            <img src="<%= asset_path(stats) %>" alt="Game Stats"> 
+        </div>
     </div>
 
-    <div class="stats-card">
-        <h3>Most Number of Ultimates</h3>
-            <p><%= @games.most_number_of_ultimates_hero_name%> - <%= @games.most_number_of_ultimates%> </p>
+    <div class="game-body">
 
-        <h3>Least Number of Ultimates</h3>
-            <p><%= @games.least_number_of_ultimates_hero_name%> - <%= @games.least_number_of_ultimates%> </p>
-    </div>
+        <div class="stats-card">
+            <h3>Most Number of Eliminations</h3>
+                <p><%= @games.most_eliminations_hero_name%> - <%= @games.most_eliminations%> </p>
 
-    <div class="stats-card">
-        <h3>Longest Match</h3>
-            <p><%= @games.longest_match_map_name%> - <%= @games.longest_match_length%> min </p>
+            <h3>Least Number of Eliminations</h3>
+                <p><%= @games.least_eliminations_hero_name%> - <%= @games.least_eliminations%> </p>
+        </div>        
 
-        <h3>Most Wins</h3>
-            <p><%= @games.most_wins_hero%> - <%= @games.most_wins_number%> </p>
+        <div class="stats-card">
+            <h3>Most Time on Fire</h3>
+                <p><%= @games.most_time_on_fire_hero_name%> - <%= @games.most_time_on_fire%> min </p>
 
-        <h3>Most Played Map</h3>
-            <p><%= @games.most_played_map_name%> - <%= @games.most_played_map_number%> </p>
+            <h3>Least Time on Fire</h3>
+                <p><%= @games.least_time_on_fire_hero_name%> - <%= @games.least_time_on_fire%> min </p>
+        </div>
+
+        <div class="stats-card">
+            <h3>Most Number of Ultimates</h3>
+                <p><%= @games.most_number_of_ultimates_hero_name%> - <%= @games.most_number_of_ultimates%> </p>
+
+            <h3>Least Number of Ultimates</h3>
+                <p><%= @games.least_number_of_ultimates_hero_name%> - <%= @games.least_number_of_ultimates%> </p>
+        </div>
+
+        <div class="stats-card">
+            <h3>Longest Match</h3>
+                <p><%= @games.longest_match_map_name%> - <%= @games.longest_match_length%> min </p>
+
+            <h3>Most Wins</h3>
+                <p><%= @games.most_wins_hero%> - <%= @games.most_wins_number%> </p>
+
+            <h3>Most Played Map</h3>
+                <p><%= @games.most_played_map_name%> - <%= @games.most_played_map_number%> </p>
+        </div>
     </div>
 </body>
