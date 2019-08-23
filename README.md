@@ -17,7 +17,7 @@ Overwatch is a rails application that allows users to discover the current chara
 learn about their backgrounds and abilities, and shows hero gameplay statistics.
 
 ## Intro Video
-[TacoLandia on YouTube](https://www.youtube.com/watch?v=qxT1I0RSelE)
+[Overwatch on YouTube](https://www.youtube.com/watch?v=qxT1I0RSelE)
 
 ## Technologies
 * Rails - version 5.2.3
