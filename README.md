@@ -55,7 +55,6 @@ end
 
 ## Features
 * Browse current characters
-* Discover cha
 * Filter characters by role
 * See a list of game statistics
 * Check statistics for individual characters
