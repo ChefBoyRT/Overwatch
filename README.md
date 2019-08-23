@@ -76,7 +76,7 @@ we were looking for. Using our own love of the game, we set out to build a fun, 
 clean UX/UI for fans to enjoy. 
 
 ## Contact
-Created by [Daniel Sanchez] and [Taylor Stein](www.linkedin.com/in/taylor-stein)
+Created by Daniel Sanchez and [Taylor Stein](www.linkedin.com/in/taylor-stein)
 
 Feel free to contact us with any questions and comments.
 
