@@ -23,8 +23,8 @@
   <% @heroes.each do |hero| %>
     <div class="profile">
       <%= link_to hero_path(hero) do %>
-      <img src="<%= hero.picture %>" alt="Hero Picture">
-  <% end %>
+        <img src="<%= hero.picture %>" alt="Hero Picture">
+      <% end %>
       <div class="hero-names">
         <%= hero.name %>
       </div> 
