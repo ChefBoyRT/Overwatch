@@ -81,4 +81,4 @@ Created by [Daniel Sanchez] and [Taylor Stein](www.linkedin.com/in/taylor-stein)
 Feel free to contact us with any questions and comments.
 
 ## License
-[Click to view](https://github.com/stein0209/TacoLandia/blob/master/License.txt)
+[Click to view](LICENSE)
