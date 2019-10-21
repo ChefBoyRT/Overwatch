@@ -12,11 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2019_08_19_170938) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "games", force: :cascade do |t|
-    t.integer "rank_id"
-    t.integer "map_id"
-    t.integer "platform_id"
-    t.integer "hero_id"
+    t.bigint "rank_id"
+    t.bigint "map_id"
+    t.bigint "platform_id"
+    t.bigint "hero_id"
     t.integer "eliminations"
     t.integer "deaths"
     t.float "match_length"
@@ -36,8 +39,8 @@ ActiveRecord::Schema.define(version: 2019_08_19_170938) do
     t.string "picture"
     t.string "background"
     t.string "graph_background"
-    t.integer "role_id"
-    t.integer "stat_id"
+    t.bigint "role_id"
+    t.bigint "stat_id"
     t.index ["role_id"], name: "index_heros_on_role_id"
     t.index ["stat_id"], name: "index_heros_on_stat_id"
   end
@@ -70,4 +73,10 @@ ActiveRecord::Schema.define(version: 2019_08_19_170938) do
     t.integer "difficulty"
   end
 
+  add_foreign_key "games", "heros"
+  add_foreign_key "games", "maps"
+  add_foreign_key "games", "platforms"
+  add_foreign_key "games", "ranks"
+  add_foreign_key "heros", "roles"
+  add_foreign_key "heros", "stats"
 end
