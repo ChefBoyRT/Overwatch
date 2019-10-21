@@ -69,6 +69,7 @@ end
 group :production do
   gem 'pg'
   gem 'chartkick', '~> 2.2.0'
+  gem 'groupdate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
