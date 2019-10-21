@@ -41,7 +41,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
-  gem 'chartkick', '~> 2.2.0'
+  gem 'chartkick', '~> 3.2.0'
   gem 'groupdate'
   gem 'rspec-rails'
   gem 'launchy'
