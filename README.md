@@ -1,6 +1,10 @@
 # Overwatch
 > A fan page for the Overwatch diehard.
 
+<p align="center">
+  <img width="600" height="400" src="https://media.giphy.com/media/Q9w3Y4RY1xKXnzKjN3/giphy.gif">
+</p>
+
 ## Table of contents
 * [General info](#general-info)
 * [Intro Video](#intro-video)
