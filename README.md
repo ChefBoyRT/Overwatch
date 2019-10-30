@@ -7,7 +7,6 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Intro Video](#intro-video)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
@@ -19,9 +18,6 @@
 ## General info
 Overwatch is a rails application that allows users to discover the current characters,
 learn about their backgrounds and abilities, and shows hero gameplay statistics.
-
-## Intro Video
-[Overwatch on YouTube](https://www.youtube.com)
 
 ## Technologies
 * Rails - version 5.2.3
